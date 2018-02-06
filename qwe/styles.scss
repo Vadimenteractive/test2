@@ -1,0 +1,10 @@
+@mixin hoverColorImg ($color) {
+  color: $color;
+  &:hover {
+    color: darken($color, 10);
+  }
+}
+
+a {
+  @include hoverColorImg(#51d54b)
+}
