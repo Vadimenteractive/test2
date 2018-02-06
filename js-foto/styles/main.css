@@ -1,0 +1,59 @@
+.line {
+  border: solid 1px seagreen;
+  margin: 10px 0; }
+
+.library a {
+  display: inline-block;
+  width: 200px; }
+  .library a img {
+    max-width: 100%; }
+
+/* overlay at start */
+.mfp-fade.mfp-bg {
+  opacity: 0;
+  transform: scale(0) rotate(90deg);
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out; }
+
+/* overlay animate in */
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.8;
+  transform: scale(0) rotate(90deg); }
+
+/* overlay animate out */
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0; }
+
+/* content at start */
+.mfp-fade.mfp-wrap .mfp-content {
+  opacity: 0;
+  transform: scale(0) rotate(90deg);
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out; }
+
+/* content animate it */
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  transform: scale(1) rotate(0);
+  opacity: 1; }
+
+/* content animate out */
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  transform: scale(0) rotate(90deg);
+  opacity: 0; }
+
+#form {
+  margin: auto;
+  padding: 35px 15px;
+  background: #ffffff;
+  max-width: 320px;
+  position: relative; }
+  #form input, #form textarea {
+    width: 100%;
+    margin-top: 10px; }
+
+.hidden {
+  display: none; }
+
+/*# sourceMappingURL=main.css.map */
