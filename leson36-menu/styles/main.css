@@ -1,0 +1,79 @@
+body {
+  background: burlywood; }
+
+#main-menu img {
+  float: left; }
+#main-menu ul {
+  float: left;
+  padding: 0;
+  overflow: hidden; }
+  #main-menu ul li {
+    display: inline-block;
+    position: relative;
+    transition: all .2s ease; }
+    #main-menu ul li[data-class="open-li"] {
+      left: 0;
+      transition: all .2s ease; }
+    #main-menu ul li a {
+      text-decoration: none;
+      padding: 10px;
+      margin: 10px;
+      background: #aaa;
+      display: inline-block; }
+  #main-menu ul.menu-opened + .hamburger .hamburger-center-line {
+    display: none; }
+  #main-menu ul.menu-opened + .hamburger:before, #main-menu ul.menu-opened + .hamburger:after {
+    width: 129%; }
+  #main-menu ul.menu-opened + .hamburger:before {
+    transform: rotate(45deg);
+    transform-origin: 0 0; }
+  #main-menu ul.menu-opened + .hamburger:after {
+    transform: rotate(-45deg);
+    transform-origin: 0 100%; }
+  @media all and (max-width: 767px) {
+    #main-menu ul {
+      display: none;
+      width: calc(100% - 110px); }
+      #main-menu ul li {
+        display: block;
+        left: -100%; }
+        #main-menu ul li a {
+          display: block;
+          margin: 10px 0; } }
+  @media all and (min-width: 768px) {
+    #main-menu ul {
+      display: block !important; }
+      #main-menu ul li {
+        left: 0 !important; } }
+#main-menu .hamburger {
+  position: relative;
+  margin-top: 10px;
+  height: 30px;
+  width: 30px;
+  float: right;
+  cursor: pointer; }
+  #main-menu .hamburger .hamburger-center-line {
+    height: 4px;
+    width: 100%;
+    background: #333333;
+    position: absolute;
+    top: 50%;
+    margin-top: -2px; }
+  #main-menu .hamburger:before, #main-menu .hamburger:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    display: block;
+    height: 4px;
+    width: 100%;
+    background: #333333;
+    transition: all .2s linear; }
+  #main-menu .hamburger:before {
+    top: 0; }
+  #main-menu .hamburger:after {
+    bottom: 0; }
+  @media all and (min-width: 768px) {
+    #main-menu .hamburger {
+      display: none; } }
+
+/*# sourceMappingURL=main.css.map */
